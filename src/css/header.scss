@@ -7,6 +7,11 @@
     justify-content: space-between;
 }
 
+.header-logo:hover {
+    opacity: .6;
+    transition: .6s;
+}
+
 .header-content {
     display: flex;
     flex-direction: column;
@@ -26,6 +31,7 @@
 }
 
 .personal-office {
+    position: relative;
     font-weight: 500;
     text-decoration: underline;
     color: #1e44a3;
@@ -33,6 +39,13 @@
         text-decoration: none;
         transition: .6s;
     }
+}
+
+.user {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -24px;
 }
 
 .header-menu {
@@ -72,8 +85,36 @@
         background: #e80e0e;
     }
     &:hover {
-        border-radius: 0;
         transform: rotate(7deg);
         transition: .6s;
+    }
+}
+
+@media (max-width: 1172px) {
+    .header {
+        justify-content: none;
+    }
+
+    .header-content {
+        margin: 0 auto;
+    }
+    
+    .header-menu-item {
+        width: 100%;
+        max-width: 192px;
+    }
+    
+    .header-description-indent, .personal-office {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 850px) {
+    .header-menu, .personal-office {
+        display: none;
+    }
+
+    .header-description-indent {
+        font-size: 12px;
     }
 }

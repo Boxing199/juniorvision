@@ -5,10 +5,57 @@
     margin: 0 auto;
     text-align: center;
 }
+//social bar start
+.social-bar {
+    position: fixed;
+    top: 20%;
+    right: 0;
+}
+
+.social-bar-link {
+    display: block;
+    width: 57px;
+    height: 54px;
+    &:hover {
+        
+    }
+}
+
+.facebook-link {
+    background: #7600a7;
+    background-image: url(../images/social.png);
+    background-repeat: no-repeat;
+    background-position-x: -6%;
+    background-position-y: 47%;
+}
+.vk-link {
+    background: #00a0f3;
+    background-image: url(../images/social.png);
+    background-repeat: no-repeat;
+    background-position-x: 33%;
+    background-position-y: 40%;
+}
+.instagram-link {
+    background: #f08721;
+    background-image: url(../images/social.png);
+    background-repeat: no-repeat;
+    background-position-x: 70%;
+    background-position-y: 50%;
+}
+.youtube-link {
+    background: #e80e0e;
+    background-image: url(../images/social.png);
+    background-repeat: no-repeat;
+    background-position-x: 105%;
+    background-position-y: 40%;
+}
+//social bar end
 
 .main-subtittle {
     font-size: 28px;
     color: #1e44a3;
+    background-image: url(../images/social.png);
+    background-repeat: no-repeat;
     padding-bottom: 14px;
 }
 
@@ -64,4 +111,67 @@
         transition: .6s;
     }
 
+}
+
+@media (max-width: 850px) {
+    .main-subtittle {
+        font-size: 20px;
+    }
+    .main-title {
+        font-size: 50px;
+    }
+
+    .about-event-video {
+        height: 100%;
+    }
+
+    .about-video {
+        flex-shrink: 1.5;
+    }
+
+    .about-video-title {
+        font-size: 20px;
+    }
+
+    .about-video-description, .about-video-description-link {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .main {
+        padding-bottom: 30px;
+    }
+
+    .main-subtittle {
+        font-size: 16px;
+    }
+    .main-title {
+        font-size: 30px;
+    }
+
+    .about-event {
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+
+    .about-video {
+        padding: 20px 0;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .about-event-video {
+        max-height: 220px;
+    }
+
+    .about-video-title {
+        font-size: 16px;
+    }
+
+    .about-video-description, .about-video-description-link {
+        font-size: 12px;
+    }
 }

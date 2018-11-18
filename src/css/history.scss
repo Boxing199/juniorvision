@@ -1,13 +1,15 @@
 .history-wrapper {
     width: 100%;
     background: url(../images/history-bg.png) no-repeat;
+    background-position: center;
+    background-color: #e7e980;
     margin: 0 auto;
 }
 
 .history {
     width: 100%;
     max-width: 490px;
-    padding: 47px 10px 70px 10px;
+    padding: 47px 10px 69px 10px;
     margin: 0 auto;
 }
 
@@ -33,4 +35,24 @@
         background-color: #f8e750;
         transition: .6s;
     }
+}
+
+@media (max-width: 660px) {
+    .history {
+        padding: 20px;
+    }
+
+    .history-description-wrapper {
+        padding: 20px 0;
+    }
+
+    .history-description {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .history-description {
+        font-size: 12px;
+    }   
 }
