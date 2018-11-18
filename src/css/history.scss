@@ -1,0 +1,36 @@
+.history-wrapper {
+    width: 100%;
+    background: url(../images/history-bg.png) no-repeat;
+    margin: 0 auto;
+}
+
+.history {
+    width: 100%;
+    max-width: 490px;
+    padding: 47px 10px 70px 10px;
+    margin: 0 auto;
+}
+
+.history-title {
+    text-align: left;
+}
+
+.history-description-wrapper {
+    padding: 53px 0 34px 0;
+}
+
+.history-description {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    padding-bottom: 29px;
+}
+
+.button-our-history {
+    color: #454545;
+    background-color: #fff38b;
+    &:hover {
+        background-color: #f8e750;
+        transition: .6s;
+    }
+}
