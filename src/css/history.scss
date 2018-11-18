@@ -1,6 +1,6 @@
 .history-wrapper {
     width: 100%;
-    background: url(../images/history-bg.png) no-repeat;
+    background: url(../images/history-bg.jpg) no-repeat;
     background-position: center;
     background-color: #e7e980;
     margin: 0 auto;
@@ -8,13 +8,20 @@
 
 .history {
     width: 100%;
-    max-width: 490px;
-    padding: 47px 10px 69px 10px;
+    max-width: 533px;
+    padding: 47px 10px 72px 10px;
     margin: 0 auto;
 }
 
 .history-title {
     text-align: left;
+    position: relative;
+}
+
+.history-shadow {
+    position: absolute;
+    bottom: -25px;
+    left: 4%;
 }
 
 .history-description-wrapper {

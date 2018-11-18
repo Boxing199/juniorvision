@@ -1,6 +1,6 @@
 .footer-wrapper {
     width: 100%;
-    background: url(../images/footer-bg.png) no-repeat;
+    background: url(../images/footer-bg.jpg) no-repeat;
     background-size: cover;
     margin: 0 auto;
 }
@@ -23,7 +23,7 @@
 }
 
 .footer-logo {
-    padding-right: 51px;
+    padding-right: 54px;
     &:hover {
         opacity: .6;
         transition: .6s;
@@ -32,12 +32,19 @@
 
 .social {
     padding-top: 21px;
+    position: relative;
+}
+
+.footer-shadow {
+    position: absolute;
+    bottom: 22px;
+    left: -18%;
 }
 
 .social-wrapper {
     display: flex;
     justify-content: space-between;
-    width: 227px;
+    width: 225px;
     padding-top: 14px;
 }
 
@@ -87,7 +94,7 @@
 .footer-menu-column {
     display: flex;
     flex-direction: column;
-    padding-right: 74px;
+    padding-right: 55px;
 }
 
 .footer-menu-item {
@@ -109,10 +116,6 @@
 
     .footer-left {
         padding: 0;
-    }
-
-    .footer-menu-column {
-        padding-right: 60px;
     }
 
     .footer-left, .footer-right {

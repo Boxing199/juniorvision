@@ -1,11 +1,12 @@
 div.news-wrapper
   div.news
     h2.title Наши новости
+      img.shadow(src="images/shadow.png")
     div.news-item-wrapper
       div.news-item
        div.news-item-date 08.03.2018
        div.news-item-description
-         h3.news-title Поздравляем победителей галаконцерта!
+         a.news-title(href="#") Поздравляем победителей галаконцерта!
          div.news-description-wrapper
            p.news-description Красотину Василису
            p.news-description PETITE SOEUR
@@ -16,7 +17,7 @@ div.news-wrapper
       div.news-item
        div.news-item-date 02.03.2018
        div.news-item-description
-         h3.news-title Победители Музыкальный континент 2018
+         a.news-title(href="#") Победители Музыкальный континент 2018
          div.news-description-wrapper
            p.news-description Первая возрастная категория. ФРАНЦУЗЫ
            br
@@ -25,4 +26,4 @@ div.news-wrapper
            p.news-description Школа 1532
            p.news-description La petite soeur
          a.read-full Читать полностью…       
-    button.button ЧИТАТЬ ВСЕ НОВОСТИ   
+    a(href="#").button ЧИТАТЬ ВСЕ НОВОСТИ   

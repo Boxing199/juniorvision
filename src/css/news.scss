@@ -1,6 +1,6 @@
 .news-wrapper {
     width: 100%;
-    background: url(../images/news-bg.png) no-repeat;
+    background: url(../images/news-bg.jpg) no-repeat;
     background-position: center;
     margin: 0 auto;
     background-color: #2a8ed4;
@@ -17,10 +17,17 @@
 .title {
     font-size: 48px;
     text-align: center;
+    position: relative;
+}
+
+.shadow {
+    position: absolute;
+    bottom: -22px;
+    left: 35%;
 }
 
 .news-item-wrapper {
-    padding-top: 58px;
+    padding: 58px 0 10px 0;
 }
 
 .news-item {
@@ -32,7 +39,7 @@
 }
 
 .news-item-description {
-    padding-left: 42px;
+    padding-left: 31px;
 }
 
 .news-item-date, .news-title {
@@ -41,7 +48,12 @@
 }
 
 .news-title {
+    color: #fff;
     text-decoration: underline;
+    &:hover {
+        text-decoration: none;
+        transition: .6s;
+    }
 }
 
 .news-description-wrapper {
@@ -51,7 +63,7 @@
 .news-description {
     font-size: 16px;
     font-weight: 500;
-    padding-bottom: 5px;
+    padding-bottom: 4px;
 }
 
 .read-full {
@@ -75,6 +87,7 @@
     border: none;
     outline: none;
     text-transform: uppercase;
+    text-align: center;
     font-size: 18px;
     font-weight: 600;
     padding: 24px 0;
