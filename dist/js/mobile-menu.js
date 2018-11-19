@@ -1,7 +1,9 @@
-$(document).ready(function() {
-  $(".menu-toggle").click(function() {
-  $(".mobile-menu").toggle(0, 1);
-  });
-  
-});
+var toggleBox = document.getElementsByClassName('.mobile-menu');
 
+document.getElementsByClassName('.menu-toggle').click = function() {
+  toggleBox.classList.add(".open");
+};
+
+document.getElementsByClassName('.menu-toggle').click = function() {
+  toggleBox.classList.remove(".open");
+};
