@@ -16,22 +16,27 @@
 .history-title {
     text-align: left;
     position: relative;
-}
-
-.history-shadow {
-    position: absolute;
-    bottom: -25px;
-    left: 4%;
+    &::after {
+        content: "";
+        display: block;
+        width: 324px;
+        height: 9px;
+        background: url(../images/shadow.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: -26px;
+        left: 0;
+    }
 }
 
 .history-description-wrapper {
     padding: 53px 0 34px 0;
-}
-
-.history-description {
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
+}
+
+.history-description {
     padding-bottom: 29px;
 }
 
@@ -51,15 +56,16 @@
 
     .history-description-wrapper {
         padding: 20px 0;
-    }
-
-    .history-description {
         font-size: 14px;
     }
 }
 
-@media (max-width: 480px) {
-    .history-description {
+@media (max-width: 520px) {
+    .history-description-wrapper {
         font-size: 12px;
-    }   
+    }
+
+    .history-title::after {
+        display: none;
+    }
 }

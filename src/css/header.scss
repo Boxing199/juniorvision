@@ -27,7 +27,7 @@
 
 .header-description-indent {
     width: 100%;
-    max-width: 648px;
+    max-width: 703px;
 }
 
 .personal-office {
@@ -35,6 +35,8 @@
     font-weight: 500;
     text-decoration: underline;
     color: #1e44a3;
+    font-size: 14px;
+    padding-left: 20px;
     &:hover {
         text-decoration: none;
         transition: .6s;
@@ -45,7 +47,7 @@
     display: block;
     position: absolute;
     top: 0;
-    left: -24px;
+    left: 0;
 }
 
 .header-menu {
@@ -186,7 +188,7 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 520px) {
     .header-content {
         margin: 0;
     }

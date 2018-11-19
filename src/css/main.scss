@@ -8,7 +8,7 @@
 //social bar start
 .social-bar {
     position: fixed;
-    top: 52%;
+    top: 35%;
     right: 0;
 }
 
@@ -16,10 +16,6 @@
     display: block;
     width: 57px;
     height: 54px;
-    &:hover {
-        opacity: .6;
-        transition: .6s;
-    }
 }
 
 .facebook-link {
@@ -29,14 +25,22 @@
     background-size: 300%;
     background-position-x: -12%;
     background-position-y: 47%;
+    &:hover {
+        background-color: darken(#7600a7, 15%);
+        transition: .6s;
+    }
 }
 .vk-link {
     background: #00a0f3;
     background-image: url(../images/social.png);
     background-repeat: no-repeat;
     background-size: 300%;
-    background-position-x: 28%;
-    background-position-y: 40%;
+    background-position-x: 30%;
+    background-position-y: 54%;
+    &:hover {
+        background-color: darken(#00a0f3, 15%);
+        transition: .6s;
+    }
 }
 .instagram-link {
     background: #f08721;
@@ -44,7 +48,11 @@
     background-repeat: no-repeat;
     background-size: 300%;
     background-position-x: 73%;
-    background-position-y: 26%;
+    background-position-y: 50%;
+    &:hover {
+        background-color: darken(#f08721, 15%);
+        transition: .6s;
+    }
 }
 .youtube-link {
     background: #e80e0e;
@@ -53,6 +61,10 @@
     background-size: 300%;
     background-position-x: 112%;
     background-position-y: 40%;
+    &:hover {
+        background-color: darken(#e80e0e, 15%);
+        transition: .6s;
+    }
 }
 //social bar end
 
@@ -88,7 +100,7 @@
 .about-video {
     text-align: left;
     width: 100%;
-    max-width: 379px;
+    max-width: 419px;
     display: flex;
     flex-direction: column;
     padding: 104px 0 0 40px;
@@ -97,11 +109,12 @@
 .about-video-title {
     font-size: 26px;
     font-weight: 700;
-    padding-bottom: 15px;
+    padding-bottom: 13px;
 }
 
 .about-video-description {
     font-size: 20px;
+    line-height: 1.2;
     font-weight: 500;
 }
 
@@ -127,7 +140,7 @@
     }
 
     .about-event-video {
-        height: 100%;
+        max-height: 320px;
     }
 
     .about-video {
@@ -166,7 +179,15 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 520px) {
+
+    .main-subtittle {
+        font-size: 14px;
+    }
+
+    .main-title {
+        font-size: 24px;
+    }
 
     .about-event-video {
         max-height: 220px;

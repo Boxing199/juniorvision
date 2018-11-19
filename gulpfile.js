@@ -19,7 +19,7 @@ var path = {
     src: {
         pug      : 'src/*.pug',
         js       : 'src/js/**/*.js',
-        style    : 'src/css/*.scss',
+        style    : 'src/css/styles.scss',
         fonts    : 'src/fonts/*.*',
         mapStyle : 'src/json/map-style/*.json',
         img      : 'src/images/**/*.*'
