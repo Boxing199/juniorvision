@@ -3,7 +3,8 @@ var gulp            = require('gulp'),
     sass            = require('gulp-sass'),
     concat          = require('gulp-concat'),
     autoprefixer    = require('gulp-autoprefixer'),
-    browserSync     = require('browser-sync').create();
+    browserSync     = require('browser-sync').create(),
+    csso            = require('gulp-csso');
 
 var path = {
     build: {
@@ -42,6 +43,7 @@ gulp.task('styles', function () {
         .pipe(sass())
         .pipe(concat('styles.css'))
         .pipe(autoprefixer())
+        .pipe(csso())
         .pipe(gulp.dest(path.build.css))
 });
 

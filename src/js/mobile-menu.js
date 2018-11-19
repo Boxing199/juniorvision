@@ -1,6 +1,4 @@
-$(document).ready(function() {
-    $(".menu-toggle").click(function() {
-    $(".mobile-menu").toggle(0, 1);
-    });
-    
-  });
+  document.getElementsByClassName(".menu-toggle").click=function() {
+    document.getElementsByClassName(".mobile-menu").toggle(0, 1);
+  };
+
