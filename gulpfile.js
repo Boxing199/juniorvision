@@ -4,7 +4,8 @@ var gulp            = require('gulp'),
     concat          = require('gulp-concat'),
     autoprefixer    = require('gulp-autoprefixer'),
     browserSync     = require('browser-sync').create(),
-    csso            = require('gulp-csso');
+    csso            = require('gulp-csso'),
+    minify          = require('gulp-minify');
 
 var path = {
     build: {
@@ -55,6 +56,7 @@ gulp.task('map-style', function () {
 
 gulp.task('scripts', function () {
     gulp.src(path.src.js)
+        .pipe(minify())
         .pipe(gulp.dest(path.build.js))
 });
 
